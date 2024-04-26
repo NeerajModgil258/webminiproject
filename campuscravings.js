@@ -83,7 +83,7 @@ if(form1) {
     event.preventDefault();
     nameInner=document.getElementById("username").value;
     sessionStorage.setItem('username',nameInner);
-    window.location.replace("campuscravings.html");
+    window.location.replace("index.html");
   });
 }
 if(sessionStorage.getItem('username')!=null) {
