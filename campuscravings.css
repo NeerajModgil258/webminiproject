@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.signin {
+  background-color: darkred;
+  color: white;
+}
+
+.signin:hover {
+  background-color: gray;
+  color: white;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 5vh;
+    z-index: 1;
+  }
+  
+  .logo {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: red;
+  }
+  
+  header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ul li {
+    list-style: none;
+    margin-left: 20px;
+  }
+  
+  header ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 1.2em;
+  }
+  
+  header ul li a:hover {
+    background: red;
+    color: white;
+  }
+
+   #productspage, #gallerypage, #contactpage {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #homepage {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #aboutpage {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #productspage {
+    font-size: 30px;
+  }
+
+  #aboutpage img {
+    width: 400px;
+    height: 400px;
+    rotate: 2deg;
+    border-radius: 10px;
+    margin-left: 200px;
+  }
+
+  .red {
+    color: red;
+  }
+
+  .productsmain {
+    font-weight: bold;
+    margin-left: 20%;
+    font-size: 4rem;
+  }
+
+  .gallerymain {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .line1, .line2, .line2caption , .line3,.line3caption, .contactflex{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .line2, .line3 {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .line2caption,.line3caption {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: red;
+  }
+
+  .line2caption p:hover, .line3caption p:hover {
+    color: black;
+    cursor: pointer;
+  }
+
+  .line2 img, .line3 img {
+    height: 250px;
+    width: 300px;
+    border: 20px solid silver;
+  }
+
+  .line2 img:hover, .line3 img:hover {
+    height: 250px;
+    width: 300px;
+    border: 20px solid red;
+  }
+
+  .line1 img {
+    height: 400px;
+    width: 400px;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .aboutcontent {
+    width: 40%;
+  }
+
+  .aboutcontent h1 {
+    font-size: 4rem;
+  }
+
+  .aboutcontent p {
+    color: rgb(89, 89, 89);
+    font-size: 1.7rem;
+  }
+
+  .contactflex form{
+    background-color: red;
+    padding: 30px;
+    padding-top: 15px;
+    width: 25%;
+    height: 40vh;
+  }
+
+  .contactflex form input {
+    width: 95%;
+    height: 5vh;
+    margin: 1vh;
+    font-size: 1rem;
+  }
+
+  .contactflex form ::placeholder {
+    padding-left: 30px;
+  }
+
+  #message {
+    height: 13vh;
+  }
+
+  #submi {
+    background-color: black;
+    width: 100px;
+    height: 50px;
+    color: white;
+    margin-top: 4vh;
+    font-size: 1rem;
+    margin-left: 35%;
+    cursor: pointer;
+  }
+
+  .details p {
+    font-size: 2rem;
+    color: rgb(89, 89, 89);
+  }
+
+  .details p a {
+    text-decoration: none;
+  }
+
+  .details p a .red:hover {
+    text-decoration: none;
+    color: gray;
+  }
+
+  #homepage img {
+    width: 400px;
+    height: 400px;
+    rotate: -2deg;
+    border-radius: 10px;
+    margin-right: 70px;
+  }
+
+  #homepage h1{
+    font-size: 4rem;
+  }
+
+  #homepage p{
+    font-size: 1.7rem;
+    color: rgb(89, 89, 89);
+  }
+
+  #homecontent {
+    width: 30%;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .displaySlide {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #buy {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    width: 150px;
+    align-self: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  #buy:hover {
+    background-color: gray;
+  }
+  
+  .toEdit {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('miniprojectassets/pic19.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .edit {
+    text-align: center;
+  }
+  
+  .edit input[type="text"],
+  .edit input[type="password"],
+  .edit input[type="email"],
+  .butedit {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .butedit {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .butedit:hover {
+    background-color: #45a049;
+  }
+  
+  .signup-link {
+    text-align: center;
+  }
+  
+  .signup-link a {
+    color: #4CAF50;
+  }
+
+  /*product page*/
+  .productheader {
+    position: static;
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: red;
+    height: 5vh;
+    z-index: 1
+  }
+
+  .productheader a {
+    color: white;
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 1.6em;
+  }
+  
+  .productheader a:hover {
+    color: yellow;
+  }
+
+  .logoproduct {
+    text-transform: uppercase;
+  }
+
+  .productheader input {
+    height: 4vh;
+    width: 20%;
+  }
+
+  .lineprod, .nameprod, .priceprod, .buttonprod {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .lineprod img {
+    height: 250px;
+    width: 250px;
+  }
+
+  .nameprod p,.priceprod p, .buttonprod button {
+    font-size: 1.4rem;
+    margin-right: 10px;
+    width: 12%;
+  }
+
+  .buttonprod button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .buttonprod button:hover {
+    background-color: gray;
+    cursor: pointer;
+  }
+
+  #allproducts {
+    display: flex;
+    width: 100%;
+    /* min-height: 100vh; */
+    justify-content: center;
+    align-items: space-evenly;
+    flex-direction: column;
+    margin-top: 7vh;
+  }
+
+  #allproducts h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  #orderedproducts {
+    display: flex;
+    width: 70%;
+    min-height: 60vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15vh;
+    margin-left: 15%;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  #orderedproducts h1 {
+    font-size: 4rem;
+  }
+
+  #orderedproducts p, #orderedproducts ul {
+    font-size: 1.5rem;
+  }
+
+  .myorderpagebody {
+    background-image: url('miniprojectassets/pic17.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  .ordernopending {
+    width: 60%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60vh;
+  }
+
+  #orderedproducts img {
+    width: 40%;
+    height: 60vh;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .ordernopending h1 {
+    justify-self: flex-start;
+    padding-top: 10vh;
+  }
+
+  #continueshopping {
+    background-color: red;
+    color: white;
+    border: none;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 50%;
+    margin-top: 2vh;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  #continueshopping:hover {
+    background-color: gray
+  }
+
+  
+
+

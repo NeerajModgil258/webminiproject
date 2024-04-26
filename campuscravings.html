@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Cravings</title>
+    <link rel="stylesheet" href="campuscravings.css">
+</head>
+<body>
+    <header>
+        <a class="logo">Campus Cravings</a>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="scrollhome()">Home</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollabout()">About</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollproducts()">Products</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollgallery()">Gallery</a></li>
+            <li><a href="javascript:void(0)" onclick="scrollcontact()">Contact</a></li>
+            <li><a href="campuslogin.html" class="signin" id="signins">Sign In</a></li>
+        </ul>
+    </header>
+    <section id="homepage">
+        <div class="mySlides">
+            <div id="homecontent">
+                <h1>Quality<br><span class="red">Products</span></h1><br>
+                <p>We pride ourselves on delivering the highest quality food to our valued customers, ensuring every bite is a delectable experience to savor.</p>
+            </div>
+            <img src="miniprojectassets/pic12.jpg">
+        </div>
+
+        <div class="mySlides">
+            <div id="homecontent">
+                <h1>Variety of<br><span class="red">Products</span></h1><br>
+                <p>Discover a wide range of delicious foods to satisfy every craving. From aromatic coffee blends to satisfying snacks, we\'ve got all your cravings covered.</p>
+            </div>
+            <img src="miniprojectassets/pic13.jpg">
+        </div>
+
+        <div class="mySlides">
+            <div id="homecontent">
+                <h1>Cleanliness &<br><span class="red">Hygiene</span></h1><br>
+                <p>We prioritize on maintaining a clean and hygienic environment, including regularly cleaning tables, floors, and restrooms, to ensure customer satisfaction and safety.</p>
+            </div>
+            <img src="miniprojectassets/pic14.jpg">
+        </div>
+
+        <div class="mySlides">
+            <div id="homecontent">
+                <h1>Exceptional<br><span class="red">Service</span></h1><br>
+                <p> We have a friendly and attentive staff who provide excellent service, creating a positive experience for customers. Their warmth and professionalism make every visit memorable.</p>
+            </div>
+            <img src="miniprojectassets/pic15.jpg">
+        </div>
+        
+    </section>
+    <section id="aboutpage">
+        <img src="miniprojectassets/pic11.jpg">
+        <div class="aboutcontent">
+            <h1><span class="red">About </span>Campus Cravings</h1>
+            <br>
+            <p>Welcome to Campus Cravings! We've got all the yummy treats students love. From tasty
+                pastries to delicious coffee, our bakery has everything you need for a quick snack or a study break.
+                Ordering is easy online, and you can choose to pick up your goodies or have them delivered right to you. Let us
+                help you satisfy your hunger while you focus on your studies. Come and enjoy the best snacks for students at
+                Campus Cravings!</p>
+        </div>
+    </section>
+    <section id="productspage">
+        <h1 class="productsmain"><span class="red">Our </span>Products</h1>
+        <br><br>
+        <div class="line2">
+            <img src="miniprojectassets/pic1.jpg">
+            <img src="miniprojectassets/pic3.jpg">
+            <img src="miniprojectassets/pic6.jpg">
+        </div>
+        <div class="line2caption">
+            <p>Pastries</p>
+            <p>Coffee</p>
+            <p>Croissant</p>
+        </div>
+        <div class="line3">
+            <img src="miniprojectassets/pic8.jpg">
+            <img src="miniprojectassets/pic9.jpeg">
+            <img src="miniprojectassets/pic10.jpg">
+        </div>
+        <div class="line3caption">
+            <p>Cup Cake</p>
+            <p>Donuts</p>
+            <p>Cookies</p>
+        </div>
+        <button id="buy" onclick="goTo()">Buy Now</button>
+    </section>
+    <section id="gallerypage">
+        <h1 class="gallerymain"><span class="red">Our </span>Gallery</h1>
+        <br><br><br><br>
+        <div class="line1">
+            <img class="gall" src="miniprojectassets/pic2.jpg">
+            <img class="gall" src="miniprojectassets/pic4.jpg">
+            <img class="gall" src="miniprojectassets/pic5.jpg">
+            <img class="gall" src="miniprojectassets/pic7.png">
+        </div>
+    </section>
+    <section id="contactpage">
+        <h1 class="gallerymain"><span class="red">Get in </span>Touch</h1>
+        <br><br><br><br>
+        <div class="contactflex">
+            <form autocomplete="off" id="contactform" action="https://script.google.com/macros/s/AKfycbxezUkZyp6VLSI2QK0_P9XYUrFcm9QXSg9_44fdrIyQfUmZjtDJeTpc5hqNEkA_vnPU/exec"
+            method='post'>
+                <input type="text" placeholder="YOUR NAME" id="name" name="name" required><br>
+                <input type="email" placeholder="EMAIL" id="email" name="email" required><br>
+                <input type="text" placeholder="PHONE NUMBER" id="phone" name="phone" required><br>
+                <input type="text" placeholder="MESSAGE" id="message" name="message" required><br>
+                <input type="submit" value="SEND" id="submi">
+            </form>
+            <div class="details">
+                <p><span class="red">&#x2709;</span>  helpme@wpdevelopers.com</p><br>
+                <p><span class="red">&#x2706;</span>  1800-234-2948</p><br>
+                <p><span class="red">&#x2708;</span>  WP Developers
+                    Office<br> &nbsp;&ensp;&ensp;VIT University
+                    <br> &nbsp;&ensp;&ensp;Vellore 632014
+                </p><br>
+                <p> <a href="https://maps.app.goo.gl/w6GB7xuSqgTXtiq19" target="_blank">
+                    <span class="red">Get directions &#x27A4;</span></a><p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy;2024 All Rights Reserved
+    </footer>
+    <script src="campuscravings.js"></script>
+</body>
+</html>

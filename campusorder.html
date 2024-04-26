@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="campuscravings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="myorderpagebody">
+    <header class="productheader">
+        <a class="logoproduct" href="campuscravings.html">Campus Cravings</a>
+        <input type="text" placeholder="Search" name="search">
+        <a href="campusorder.html">My Orders</a>
+        <a href="javascript:void(0)" onclick="comingSoon()" class="fa fa-shopping-cart"></a>
+    </header>
+    <section id="orderedproducts">
+        <img src="miniprojectassets/pic16.jpg">
+        <div class="ordernopending">
+            <h1><span class="red">My</span> Orders</h1>
+            <br>
+            <p>Your <span class="red">Pending Order</span> Numbers</p>
+            <br><br>
+            <ul id="orderspending"></ul>
+        </div>
+    </section>
+    <button id="continueshopping" onclick="redirectProduct()">Continue Shopping</button>
+    <script src="campuscravings.js"></script>
+</body>
+</html>
